@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>WorkOn - кастомная обувь</title>
+    <link rel="stylesheet" href="css/back.css">
+    <link rel="stylesheet" href="css/template.css">
+</head>
+<body>
+    <header id="header">
+        <button id="menu" onclick="openMenu()">
+            <span class="iconMenu"></span>
+            <span class="iconMenu"></span>
+            <span class="iconMenu"></span>
+            <span class="iconMenu"></span>
+        </button>
+        <img src="img/logo.png" alt="">
+        <nav>
+            <a href="index.html" class="header_link">Главная</a>
+            <a href="shop.html" class="header_link">Магазин</a>
+            <a href="back.html" class="header_link active">Обратная связь</a>
+        </nav>
+        <div id="profile">
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg>
+            </a>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div id="background">
+        <div id="mobile_menu">
+            <div>
+                <h2>Меню</h2>
+                <button id="menu_close" onclick="closeMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                    </svg>
+                </button>
+            </div>
+            <a href="">Главная</a>
+            <a href="">Nike Custom</a>
+            <a href="">Converse</a>
+            <a href="">Sneakers Custom</a>
+            <a href="">Шапки и Жилеты</a>
+            <a href="">Про нас</a>
+        </div>
+    </div>
+
+    <div id="content">
+        <h3>ОБРАТНАЯ СВЯЗЬ</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.147620092545!2d39.6412791!3d47.213693799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3bf32ba030eb1%3A0x492e50ea3767332c!2z0L_RgC4g0KHRgtCw0YfQutC4LCAxODQg0LrQvtGA0L_Rg9GBIDIsINCg0L7RgdGC0L7Qsi3QvdCwLdCU0L7QvdGDLCDQoNC-0YHRgtC-0LLRgdC60LDRjyDQvtCx0LsuLCAzNDQwOTA!5e0!3m2!1sru!2sru!4v1655504099906!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div>
+            <div id="contacts">
+                <h4>КОНТАКТЫ</h4>
+                <h4>ПОСЕТИТЕ НАШ МАГАЗИН</h4>
+                <p>г.Ростов-на-Дону пр.Стачки д.184/2</p>
+                <p>nais30055003@gmail.com</p>
+                <p>Время работы: 9:00 - 20:00 Пн - Сб</p>
+            </div>
+            <form action="" method="POST">
+                <input type="text" placeholder="Имя">
+                <input type="email" placeholder="Почта">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                <button type="submit">Отправить письмо</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="">FACEBOOK</a></li>
+            <li><a href="">INSTAGRAM</a></li>
+            <li><a href="">PINTEREST</a></li>
+            <li><a href="">YOUTUBE</a></li>
+        </ul>
+        <div id="links">
+            <div id="addr">
+                <img src="img/logo.webp" alt="">
+                <p>г.Ростов-на-Дону пр.Стачки д.184/2</p>
+            </div>
+            <div id="sitemap">
+                <h4>Карта сайта</h4>
+                <a href="">Главная</a>
+                <a href="">Nike Custom</a>
+                <a href="">Converse</a>
+                <a href="">Sneakers Custom</a>
+                <a href="">Шапки и Жилеты</a>
+                <a href="">Про нас</a>
+            </div>
+            <div id="policy">
+                <h4>Политика</h4>
+                <a href="">Refund</a>
+                <a href="">Приватность</a>
+                <a href="">Правила и соглашения</a>
+                <a href="">Доставка</a>
+                <a href="">Коллекции</a>
+            </div>
+            <div id="newsletter">
+                <h4>Уведомления</h4>
+                <p>Подпишитесь на рассылку, чтобы первым получать информацию о новых товарах, последних коллекциях, мероприятиях, новостей и многого другого</p>
+                <input type="email" placeholder="Ваша почта">
+                <button>Подписаться</button>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>COPYRIGHT © 2022 <span>GROMOLION</span> ALL RIGHTS RESERVED</p>
+            <img src="img/payments.webp" alt="">
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+:root {
+    --header_link-color: #5d5c5c !important;
+}
+
+header {
+    background: white;
+    position: sticky !important;
+    top: 0;
+    box-shadow: 0 4px 5px #9d9d9d;
+}
+
+#content h3, .collection h4 {text-align: center}
+#content h3 {margin: 25px 0 0}
+
+#collections {
+    margin: 0 auto 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.collection {
+    width: 25%;
+    margin: 0 20px;
+}
+
+.collection h4 {font-size: 19px}
+.collection h4 a {color: black}
+
+.wrapper {
+    text-align: center;
+    margin: 30px 0 10px;
+}
+.more {
+    color: #464646;
+    border: 2px solid #464646;
+    transition: 0.6s ease;
+    padding: 5px 10px;
+}
+.more:hover {
+    background: #bdbcbc;
+    color: black;
+}
+
+.collection p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.collection img {
+    width: 100%;
+    text-align: center;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .collection {
+        width: 40%;
+    }
+}
+@media (max-width: 767px) {
+    .collection {
+        width: 80%;
+    }
+}

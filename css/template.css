@@ -26,6 +26,7 @@ header {
     justify-content: space-between;
     transition: 0.6s ease;
 }
+#menu {display: none}
 
 header img {
     width: 3%;
@@ -72,170 +73,14 @@ header img {
     font-size: 24px;
 }
 
-.header_link, .previous, .next, header a svg, #slider .buy a {transition: 0.6s ease;}
+.active {color: black}
+
+.header_link, .previous, .next, header a svg {transition: 0.6s ease;}
 
 .header_link:hover, header a svg{color: black;}
-
-#slider {position: relative;}
-
-#slider img {
-    width: 100%;
-    max-height: 1030px;
-}
-
-.slide a {
-    position: absolute;
-    left: 50%;
-    color: black;
-    border: 2px solid black;
-    padding: 5px 10px;
-}
-
-.previous, .next {cursor: pointer;}
-.previous:hover, .next:hover, header a svg:hover {color: white;}
-
-.previous {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-}
-#slider .buy {
-    position: absolute;
-    width: 100%;
-    bottom: 50px;
-    text-align: center;
-}
-
-#slider .buy a {
-    color: white;
-    border: 2px solid white;
-    padding: 5px 10px;
-    font-size: 24px;
-}
-
-#slider .buy a:hover {
-    color: black;
-    background: white;
-}
-
-.next {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-}
-
-#best_sale, #follow_us {margin: 40px 0;}
-
-#best_sale h3, #best_sale h4 {
-    text-align: center;
-    margin: 5px 0;
-}
-
-#best_sale h4 {
-    font-size: 18px;
-    font-weight: 400;
-    color: gray;
-}
-
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.products > div {
-    width: 16.666666667%;
-}
-
-.products > div img {width: 90%;}
-
-.products > div h3 {font-weight: 500;}
-
-.products > div > div {position: relative;}
-
-.products > div > div a{
-    display: none;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 0;
-    background: black;
-    transition: 0.6s ease;
-    color: white;
-}
-
-.products > div:hover {cursor: pointer;}
-
-.products > div:hover .best_1, .best_2 {display: none;}
-
-.products > div:hover .best_2, .products > div:hover > div a {display: block;}
-
-.products > div:hover > div a:hover {background: rgba(0,0,0,0.5);}
+header a svg:hover {color: white;}
 
 
-#celebrities {
-    padding: 100px 0;
-    background: #ebebeb;
-}
-
-#celebrities h3, #follow_us h3 {
-    text-align: center;
-}
-
-#celebrities_list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 80px 0;
-}
-
-.celebrity {
-    margin: 0 40px;
-}
-
-.celebrity h4 {
-    font-weight: 400;
-    font-size: 24px;
-    margin: 10px 0;
-    text-align: center;
-}
-
-#celebrities .more {
-    width: 100%;
-    text-align: center;
-}
-
-#celebrities .more a {
-    color: black;
-    transition: 0.6s ease;
-    border: 2px solid black;
-    font-size: 24px;
-    padding: 5px 10px;
-}
-
-#celebrities .more a:hover {
-    color: white;
-    background: black;
-}
-
-#follow_us > div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#follow_us > div > div {
-    width: 25%;
-    margin: 5px;
-    overflow: hidden;
-}
-
-#follow_us img {
-    width: 100%;
-    transition: 0.6s ease;
-}
-
-#follow_us div img:hover {transform: scale(120%);}
 
 footer {
     color: white;
@@ -317,7 +162,7 @@ footer #links h4 {
 #newsletter input:focus {
     border: 1px solid #464646;
     box-shadow: 1px 1px 5px #464646,
-                -1px -1px 5px #464646;
+    -1px -1px 5px #464646;
 }
 
 #newsletter button {
@@ -342,6 +187,7 @@ footer #links h4 {
 }
 
 #copyright span {color: #9d9d9d;}
+
 @media (max-width: 992px) {
     header {
         background: white;
@@ -365,17 +211,9 @@ footer #links h4 {
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    .products> div {margin: 0 50px;}
-    .products > div h3 {font-size: 18px}
-    .celebrity {margin: 0 100px}
-    #follow_us > div > div {margin: 0 50px}
     footer #links > div {width: 40%}
 }
 @media (max-width: 767px) {
-    .products> div {margin: 0 100px;}
-    .products > div h3 {font-size: 18px}
-    .celebrity {margin: 0 200px}
-    #follow_us > div > div {margin: 0 50px}
     footer #links h4 {width: 95%}
     footer #links a {
         width: 33.33333%;
@@ -395,31 +233,4 @@ footer #links h4 {
     }
     #addr p {width: fit-content}
     #copyright img {display: none}
-}
-
-@media screen and (min-width: 768px) {
-    .span-around, .span-around-white {
-        position: relative;
-        padding: 0 70px;
-    }
-    .span-around::before, .span-around::after {
-        content: "";
-        position: absolute;
-        top: 14px;
-        width: 130px;
-        height: 2px;
-        border-top: 2px solid #ebebeb;
-        border-bottom: 2px solid #ebebeb;
-    }
-    .span-around::after, .span-around-white:after {left: 100%;}
-    .span-around::before, .span-around-white::before {right: 100%;}
-    .span-around-white::before, .span-around-white:after {
-        content: "";
-        position: absolute;
-        top: 14px;
-        width: 130px;
-        height: 2px;
-        border-top: 2px solid #fff;
-        border-bottom: 2px solid #fff;
-    }
 }

@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Drippy - кастомная обувь</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>WorkOn - кастомная обувь</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/template.css">
 </head>
 <body>
     <header id="header">
@@ -15,9 +16,9 @@
         </button>
         <img src="img/logo.png" alt="">
         <nav>
-            <a href="" class="header_link">Главная</a>
-            <a href="" class="header_link">Магазин</a>
-            <a href="" class="header_link">Про нас</a>
+            <a href="index.html" class="header_link active">Главная</a>
+            <a href="shop.html" class="header_link">Магазин</a>
+            <a href="back.html" class="header_link">Обратная связь</a>
         </nav>
         <div id="profile">
             <a href="">
@@ -242,5 +243,18 @@
 
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        setInterval(function () {
+            if (window.pageYOffset >= 100) {
+                document.documentElement.style.setProperty('--header_link-color', "#646464")
+                header.style.background = "white";
+                header.style.boxShadow= "0 4px 5px #9d9d9d"
+            } else {
+                document.documentElement.style.setProperty('--header_link-color', "#fff")
+                header.style.background = "";
+                header.style.boxShadow= "none"
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
