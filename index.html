@@ -7,7 +7,7 @@
 </head>
 <body>
     <header id="header">
-        <button id="menu">
+        <button id="menu" onclick="openMenu()">
             <span class="iconMenu"></span>
             <span class="iconMenu"></span>
             <span class="iconMenu"></span>
@@ -32,6 +32,26 @@
             </a>
         </div>
     </header>
+
+    <div id="background">
+        <div id="mobile_menu">
+            <div>
+                <h2>Меню</h2>
+                <button id="menu_close" onclick="closeMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                    </svg>
+                </button>
+            </div>
+            <a href="">Главная</a>
+            <a href="">Nike Custom</a>
+            <a href="">Converse</a>
+            <a href="">Sneakers Custom</a>
+            <a href="">Шапки и Жилеты</a>
+            <a href="">Про нас</a>
+        </div>
+    </div>
+
     <div id="slider">
         <div class="slide">
             <img src="img/slider_1.jpg" alt="">
