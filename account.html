@@ -8,6 +8,7 @@
         :root {
             --header_link-color: #5d5c5c !important;
         }
+
         header {
             background: white;
             position: sticky !important;
@@ -26,8 +27,8 @@
         </button>
         <img src="img/logo.png" alt="">
         <nav>
-            <a href="index.html" class="header_link">Главная</a>
-            <a href="shop.html" class="header_link active">Магазин</a>
+            <a href="index.html" class="header_link active">Главная</a>
+            <a href="shop.html" class="header_link">Магазин</a>
             <a href="back.html" class="header_link">Обратная связь</a>
         </nav>
         <div id="profile">
@@ -36,7 +37,7 @@
                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                 </svg>
             </a>
-            <a href="">
+            <a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
                     <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
                 </svg>
@@ -63,95 +64,47 @@
             <a href="back.html">Обратная связь</a>
         </div>
     </div>
+    <h3 class="page_title">Войти</h3>
 
-    <div class="content" id="shop">
-        <h3 class="page_title">КОЛЛЕКЦИИ</h3>
-        <div id="collections">
-            <div class="collection">
-                <a href="">
-                    <img src="img/collections/1.webp" alt="">
-                </a>
-                <h4>
-                    <a href="">
-                        CONVERSE WORKON
-                    </a>
-                </h4>
-                <p>Converse All Star Custom Work On: Выбирайте свою эксклюзивную, уникальную обувь, не останавливайтесь на этом.</p>
-                <div class="wrapper">
-                    <a href="" class="more">Подробнее +</a>
-                </div>
-            </div>
-            <div class="collection">
-                <a href="">
-                    <img src="img/collections/2.webp" alt="">
-                </a>
-                <h4>
-                    <a href="">
-                        DECON RECON
-                    </a>
-                </h4>
-                <p>Культовые туфли, сделанные из кроссовок, структура которых была разделена на несколько секций, переоборудованы между собой и...</p>
-                <div class="wrapper">
-                    <a href="" class="more">Подробнее +</a>
-                </div>
-            </div>
-            <div class="collection">
-                <a href="">
-                    <img src="img/collections/3.webp" alt="">
-                </a>
-                <h4>
-                    <a href="">
-                        Шапки и Жилеты
-                    </a>
-                </h4>
-                <p>Выберите свою любимую модель шляпы или куртки, отделанную до мельчайших деталей нашими лучшими художниками. Мы используем материалы премиум-класса...</p>
-                <div class="wrapper">
-                    <a href="" class="more">Подробнее +</a>
-                </div>
-            </div>
-            <div class="collection">
-                <a href="">
-                    <img src="img/collections/4.webp" alt="">
-                </a>
-                <h4>
-                    <a href="">
-                        MANUFACTURES
-                    </a>
-                </h4>
-                <p>Каждая обувь оригинальна, а компоненты сделаны вручную в Италии. Выделитесь из толпы. Сделайте свой уникальный...</p>
-                <div class="wrapper">
-                    <a href="" class="more">Подробнее +</a>
-                </div>
-            </div>
-            <div class="collection">
-                <a href="">
-                    <img src="img/collections/5.webp" alt="">
-                </a>
-                <h4>
-                    <a href="">
-                        NIKE WORKON
-                    </a>
-                </h4>
-                <p>Кастомные кроссовки Nike WorkOn, ZIP,SWOOSH, STRTCH. Каждый наш продукт тщательно продуман и до мельчайших деталей нашими лучшими художниками. Используем...</p>
-                <div class="wrapper">
-                    <a href="" class="more">Подробнее +</a>
-                </div>
-            </div>
-            <div class="collection">
-                <a href="">
-                    <img src="img/collections/6.webp" alt="">
-                </a>
-                <h4>
-                    <a href="">
-                        SNEAKERS CUSTOM
-                    </a>
-                </h4>
-                <p>Каждая обувь оригинальна, а компоненты сделаны вручную в Италии. Выделитесь из толпы. Сделайте свой уникальный...</p>
-                <div class="wrapper">
-                    <a href="" class="more">Подробнее +</a>
-                </div>
-            </div>
+    <div id="account">
+        <div id="btns">
+            <div id="login_btn" onclick="login()">ВХОД</div>
+            <div id="signin_btn" onclick="signin()">РЕГИСТРАЦИЯ</div>
         </div>
+
+        <form id="login_form" action="" method="POST">
+            <input type="email" placeholder="Email">
+            <div class="password">
+                <input type="password" class="password_input" placeholder="Пароль">
+                <div onclick="show()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                    </svg>
+                </div>
+            </div>
+            <button class="form_submit" type="submit">ВОЙТИ</button>
+            <div id="forgot">
+                <button>ЗАБЫЛИ ПАРОЛЬ?</button>
+            </div>
+        </form>
+        <form id="signin_form" action="" method="POST">
+            <div id="name">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Фамилия">
+            </div>
+            <input type="email" placeholder="Email">
+            <div class="password">
+                <input type="password" class="password_input" placeholder="Пароль">
+                <div onclick="show()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                    </svg>
+                </div>
+            </div>
+            <button class="form_submit" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        </form>
     </div>
 
     <footer>
@@ -197,5 +150,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/account.js"></script>
 </body>
 </html>

@@ -6,3 +6,4 @@ function closeMenu() {
     document.getElementById("background").style.display = "none";
     document.body.style.overflow = "";
 }
+
