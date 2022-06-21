@@ -1,9 +1,14 @@
+let bg = document.getElementById("background");
+let menu = document.getElementById("mobile_menu");
+
 function openMenu() {
-    document.getElementById("background").style.display = "block";
+    bg.style.display = "block";
+    menu.style.display = "flex";
     document.body.style.overflow = "hidden";
 }
 function closeMenu() {
-    document.getElementById("background").style.display = "none";
+    bg.style.display = "none";
+    menu.style.display = "none"
     document.body.style.overflow = "";
 }
 

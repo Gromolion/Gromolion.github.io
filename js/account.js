@@ -3,6 +3,7 @@ let signin_btn = document.getElementById("signin_btn");
 let login_form = document.getElementById("login_form");
 let signin_form = document.getElementById("signin_form");
 
+let account_title = document.getElementById("account_title");
 let pswd_inputs = document.getElementsByClassName("password_input");
 let type = 0;
 
@@ -14,6 +15,8 @@ function login() {
 
     login_form.style.display = "flex";
     signin_form.style.display = "none";
+
+    account_title.innerText = "ВОЙТИ";
 
     for (let inp of pswd_inputs) {
         inp.setAttribute("type", "password");
@@ -27,6 +30,8 @@ function signin() {
 
     signin_form.style.display = "flex";
     login_form.style.display = "none";
+
+    account_title.innerText = "ЗАРЕГИСТРИРОВАТЬСЯ";
 
     for (let inp of pswd_inputs) {
         inp.setAttribute("type", "password");
